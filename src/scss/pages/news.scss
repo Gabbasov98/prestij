@@ -1,0 +1,25 @@
+@import "../vars";
+.news{
+  padding: 45px 0 118px;
+  background-color: $grayBg;
+  &__filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__select{
+    width: 240px;
+  }
+  &__select2{
+    width: 120px;
+  }
+  &__grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 28px;
+  }
+  &__more{
+    margin: 80px 0 0;
+  }
+}

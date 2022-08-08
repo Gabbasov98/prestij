@@ -1,0 +1,168 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+<div class="wrapper">
+    <header class="header header--light">
+        @@include('components/page-blocks/_header.html')
+    </header>
+    <main class="content">
+
+        <section class="main">
+            <div class="main__slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(img/main-bg.jpg);">
+                            <div class="main__content">
+                                <h1 class="main__title display1">Производcтво сетки PressMesh® c  1999 года</h1>
+                                <div class="main__desc">Качество продукции подтверждено международным стандартом качества ISO 9001.</div>
+                                <a href="" class="main__link mbtn mbtn-white-outline">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/direction.jpg);">
+                            <div class="main__content">
+                                <h1 class="main__title display1">Производcтво сетки PressMesh® c  1999 года 2</h1>
+                                <div class="main__desc">Качество продукции подтверждено международным стандартом качества ISO 9001.</div>
+                                <a href="" class="main__link mbtn mbtn-white-outline">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image: url(img/direction2.jpg);">
+                            <div class="main__content">
+                                <h1 class="main__title display1">Производcтво сетки PressMesh® c  1999 года 3</h1>
+                                <div class="main__desc">Качество продукции подтверждено международным стандартом качества ISO 9001.</div>
+                                <a href="" class="main__link mbtn mbtn-white-outline">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="main__nav">
+                <a href="" class="main__nav-link">Компания</a>
+                <a href="" class="main__nav-link">Продукция</a>
+                <a href="" class="main__nav-link">Применение</a>
+                <a href="" class="main__nav-link">Решения PressMesh®</a>
+                <a href="" class="main__nav-link">Портфолио</a>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="container">
+                <div class="product__card">
+                    <div class="product__subtitle title2">Продукция</div>
+                    <div class="product__title display2">Просечно-вытяжые сетки PressMesh®</div>
+                    <div class="product__desc">Инновационная продукция на базе сетки PressMesh обладает высокими эксплуатационными характеристиками и применяется во многих отраслях промышленности</div>
+                    <a href="" class="product__link mbtn mbtn-black-outline">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="model">
+            <div class="container">
+                <div class="model__inner">
+                    <div class="model__left">
+                        <div class="model__content model__content--active" data-tabs-path="1">
+                            @@include('components/page-blocks/_model-content.html',{"title":"Строительство"})
+                        </div>
+                        <div class="model__content" data-tabs-path="2">
+                            @@include('components/page-blocks/_model-content.html',{"title":"Интерьер"})
+                        </div>
+                        <div class="model__content" data-tabs-path="3">
+                            @@include('components/page-blocks/_model-content.html',{"title":"Фильтрация"})
+                        </div>
+                        <div class="model__content" data-tabs-path="4">
+                            @@include('components/page-blocks/_model-content.html',{"title":"Системы вентиляции"})
+                        </div>
+                        <div class="model__content" data-tabs-path="5">
+                            @@include('components/page-blocks/_model-content.html',{"title":"Микросетка"})
+                        </div>
+                        <div class="model__content" data-tabs-path="6">
+                            @@include('components/page-blocks/_model-content.html',{"title":"Пищевая промышленность"})
+                        </div>
+                        <div class="model__content" data-tabs-path="7">
+                            @@include('components/page-blocks/_model-content.html',{"title":"Автотюнинг"})
+                        </div>
+                        <div class="model__content" data-tabs-path="8">
+                            @@include('components/page-blocks/_model-content.html',{"title":"Защитные конструкции"})
+                        </div>
+                        <div class="model__bottom">
+                            <div class="model__nav">
+                                <button class="model__btn">
+                                    <svg class="sprite">
+                                        <use xlink:href="img/sprite.svg#stop"></use>
+                                    </svg>
+                                </button>
+                                <button class="model__btn">
+                                    <svg class="sprite">
+                                        <use xlink:href="img/sprite.svg#play"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model__right">
+                        <div class="model__tabs">
+                            <div class="model__tab model__tab--active title2" data-tabs-path="1">Строительство</div>
+                            <div class="model__tab title2" data-tabs-path="2">Интерьер</div>
+                            <div class="model__tab title2" data-tabs-path="3">Фильтрация</div>
+                            <div class="model__tab title2" data-tabs-path="4">Системы вентиляции</div>
+                            <div class="model__tab title2" data-tabs-path="5">Микросетка</div>
+                            <div class="model__tab title2" data-tabs-path="6">Пищевая промышленность</div>
+                            <div class="model__tab title2" data-tabs-path="7">Автотюнинг</div>
+                            <div class="model__tab title2" data-tabs-path="8">Защитные конструкции</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__group">
+                    <div class="catalog__content">
+                        <div class="catalog__subtitle title2">Решения pressmesh</div>
+                        <div class="catalog__title display3">Фасадные системы PressMesh®</div>
+                        <div class="catalog__desc body-text">Инновационная продукция на базе сетки PressMesh обладает высокими эксплуатационными характеристиками и применяется во многих отраслях промышленности</div>
+                        <a href="" class="catalog__link mbtn mbtn-black-outline">Узнать больше</a>
+                    </div>
+                    <div class="catalog__img">
+                        <img src="img/catalog.webp" alt="">
+                    </div>
+                </div>
+                <div class="catalog__group">
+                    <div class="catalog__content">
+                        <div class="catalog__subtitle title2">Решения pressmesh</div>
+                        <div class="catalog__title display3">Потолочные решения PressMesh®</div>
+                        <div class="catalog__desc body-text">Инновационная продукция на базе сетки PressMesh обладает высокими эксплуатационными характеристиками и применяется во многих отраслях промышленности</div>
+                        <a href="" class="catalog__link mbtn mbtn-black-outline">Узнать больше</a>
+                    </div>
+                    <div class="catalog__img">
+                        <img src="img/catalog2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection">
+            @@include('components/page-blocks/_collection.html',{"title":"small","text":"портфолио"})
+        </section>
+
+        <section class="consult">
+            @@include('components/page-blocks/_consult.html')
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+        @@include('components/page-blocks/_footer.html')
+    </footer>
+
+    @@include('components/_popups.html')
+</div>
+
+@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

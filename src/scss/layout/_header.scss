@@ -1,0 +1,158 @@
+@import "../vars";
+.header{
+  padding: 22px 0;
+  position: relative;
+  z-index: 3;
+  &--light{
+    .header{
+      &__logo{
+        svg{
+          fill: #fff;
+        }
+      }
+      &__burger{
+        span{
+          background-color: #fff;
+        }
+      }
+      &__btn{
+        svg{
+          fill: #fff;
+        }
+      }
+      &__phone{
+        stroke: #fff;
+      }
+    }
+  }
+  &--active{
+    .header{
+      &__logo{
+        svg{
+          fill: #fff;
+        }
+      }
+      &__burger{
+        span{
+          background-color: #fff;
+          &:nth-child(1){
+            transform: rotate(-45deg) translate(-8px,5px);
+          }
+          &:nth-child(2){
+            transform: scale(0);
+          }
+          &:nth-child(3){
+            transform: rotate(45deg) translate(-8px,-5px);
+          }
+        }
+      }
+    }
+    .menu{
+      opacity: 1;
+      pointer-events: unset;
+    }
+  }
+  .container{
+    max-width: 100%;
+  }
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo{
+    width: 170px;
+    height: 28px;
+    position: relative;
+    z-index: 15;
+    svg{
+      width: 100%;
+      height: 100%;
+      fill:$black;
+    }
+  }
+  &__buttons{
+    display: flex;
+    align-items: center;
+  }
+  &__btn{
+    margin-left: 36px;
+    svg{
+      width: 24px;
+      height: 24px;
+      fill:$black;
+    }
+  }
+  &__phone{
+    stroke: $black;
+  }
+  &__burger{
+    width: 24px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    span{
+      display: block;
+      width: 100%;
+      height: 1.31px;
+      background: $black;
+      left: 0;
+      transition: all .3s;
+      &:nth-child(1){
+        position: absolute;
+        top: 0;
+      }
+      &:nth-child(3){
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.menu{
+  transition: all .3s;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $primaryBg;
+  z-index: 12;
+  padding: 100px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__grid{
+    max-width: 930px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title,
+  &__link,
+  &__link2{
+    font-size: 18px;
+    line-height: 140%;
+    color: $gray;
+  }
+  &__title{
+    font-weight: 700;
+  }
+  &__links{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 16px;
+    margin: 24px 0;
+  }
+  &__link,
+  &__link2{
+    &:hover{
+      color: #fff;
+    }
+  }
+}

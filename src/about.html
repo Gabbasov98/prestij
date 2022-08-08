@@ -1,0 +1,120 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"О компании", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="page-top page-top--small">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item">Компания</a>
+                        <span class="breadcrumbs__item">О компании</span>
+                    </div>
+
+                    <h1 class="page-top__title display1">О компании</h1>
+                </div>
+            </section>
+
+
+            <section class="about">
+                <div class="container">
+
+                    <div class="page__wrap page__wrap--gap100">
+                        <div class="page__left">
+                            <div class="about__desc body-text">Основными преимуществами фасадных систем из просечно-вытяжных листов или сеток «ПРЕССТИЖ» являются:  возможность использовать различные геометрические формы ячеек и различные марки материалов – широкая возможность цветовых комбинаций /порошковая полимерная окраска в цвета по таблице RAL/ - эффективная вентиляция стен здания – устойчивость фасадной системы к атмосферным воздействиям – быстрый монтаж фасадной системы.</div>
+
+                            <div class="stage">
+                                <div class="stage__title display4">Этапы реализации проекта</div>
+                                <div class="stage__wrap">
+                                    <div class="stage__left">
+                                        <div class="stage__tab stage__tab--active body-text2" data-tabs-path="1">Создание концепции фасада здания, интеграция в окружающую среду</div>
+                                        <div class="stage__tab body-text2" data-tabs-path="2">Разработка технического решения, техническая документация, создание полноразмерного образца</div>
+                                        <div class="stage__tab body-text2" data-tabs-path="3">Производство под ключ <br> Шеф-монтаж</div>
+                                    </div>
+                                    <div class="stage__right">
+                                        <div class="stage__img stage__img--active" data-tabs-path="1">
+                                            <img src="img/stage.jpg" alt="">
+                                        </div>
+                                        <div class="stage__img" data-tabs-path="2">
+                                            <img src="img/stage2.jpg" alt="">
+                                        </div>
+                                        <div class="stage__img" data-tabs-path="3">
+                                            <img src="img/stage3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="concept">
+                                <div class="concept__title display4">Принципы работы</div>
+                                <div class="concept__grid">
+                                    <div class="concept__item">
+                                        <div class="concept__num">01</div>
+                                        <div class="concept__desc body-text2">Diam eu sed diam ac tortor mattis accumsan. Erat elementum consequat cras molestie mattis.</div>
+                                    </div>
+                                    <div class="concept__item">
+                                        <div class="concept__num">02</div>
+                                        <div class="concept__desc body-text2">Enim, proin at eget egestas pretium consectetur habitant. Pellentesque velit dictumst gravida urna pretium, dictum at urna.</div>
+                                    </div>
+                                    <div class="concept__item">
+                                        <div class="concept__num">03</div>
+                                        <div class="concept__desc body-text2">Massa curabitur in faucibus placerat enim, iaculis eget amet. Viverra aliquam, tristique cras faucibus in ut at cras amet.</div>
+                                    </div>
+                                    <div class="concept__item">
+                                        <div class="concept__num">04</div>
+                                        <div class="concept__desc body-text2">Diam eu sed diam ac tortor mattis accumsan. Erat elementum consequat cras molestie mattis.</div>
+                                    </div>
+                                    <div class="concept__item">
+                                        <div class="concept__num">05</div>
+                                        <div class="concept__desc body-text2">Massa curabitur in faucibus placerat enim, iaculis eget amet. Viverra aliquam, tristique cras faucibus in ut at cras amet.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-gallery">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <a href="img/gallery.webp" data-fancybox="about-gallery" class="swiper-slide">
+                                            <img src="img/gallery.webp" alt="">
+                                        </a>
+                                        <a href="img/gallery2.webp" data-fancybox="about-gallery" class="swiper-slide">
+                                            <img src="img/gallery2.webp" alt="">
+                                        </a>
+                                        <a href="img/gallery3.webp" data-fancybox="about-gallery" class="swiper-slide">
+                                            <img src="img/gallery3.webp" alt="">
+                                        </a>
+                                        <a href="img/gallery.webp" data-fancybox="about-gallery" class="swiper-slide">
+                                            <img src="img/gallery.webp" alt="">
+                                        </a>
+                                        <a href="img/gallery2.webp" data-fancybox="about-gallery" class="swiper-slide">
+                                            <img src="img/gallery2.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__right">
+                            <div class="sidebar">
+                                @@include('components/page-blocks/_sidebar.html', {"active":"about"})
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

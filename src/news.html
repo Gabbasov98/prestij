@@ -1,0 +1,108 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Новости", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="page-top page-top--small">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item">Компания</a>
+                        <span class="breadcrumbs__item">Новости</span>
+                    </div>
+
+                    <h1 class="page-top__title display1">Новости</h1>
+                </div>
+            </section>
+
+
+            <section class="news">
+                <div class="container">
+
+                    <div class="page__wrap">
+                        <div class="page__left">
+                            <div class="news__filter">
+                                <div class="news__select">
+                                    <select class="my-select">
+                                        <option selected>По новизне</option>
+                                        <option>По популярности</option>
+                                        <option>По имени</option>
+                                        <option>Только 2022</option>
+                                        <option>Только 2021</option>
+                                    </select>
+                                </div>
+                                <div class="news__select2">
+                                    <select class="my-select">
+                                        <option selected>10</option>
+                                        <option>20</option>
+                                        <option>50</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="news__grid">
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news"})
+                                </div>
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news2"})
+                                </div>
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news3"})
+                                </div>
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news4"})
+                                </div>
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news5"})
+                                </div>
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news"})
+                                </div>
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news2"})
+                                </div>
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news3"})
+                                </div>
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news4"})
+                                </div>
+                                <div class="news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news5"})
+                                </div>
+                            </div>
+
+                            <button class="news__more more-btn mbtn mbtn-white">Загрузить еще</button>
+                        </div>
+
+                        <div class="page__right">
+                            <div class="sidebar">
+                                @@include('components/page-blocks/_sidebar.html', {"active":"news"})
+                                <div class="tags">
+                                    <a href="" class="tag">Все новости</a>
+                                    <a href="" class="tag">Компания Пресстиж</a>
+                                    <a href="" class="tag">Рынок</a>
+                                    <a href="" class="tag">Полезная информация</a>
+                                    <a href="" class="tag">Технологии</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

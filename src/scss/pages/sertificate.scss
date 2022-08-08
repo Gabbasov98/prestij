@@ -1,0 +1,30 @@
+@import "../vars";
+.sertificate{
+  padding-bottom: 200px;
+  &__items{
+    margin-top: 125px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 80px;
+    color: $dark;
+    max-width: 660px;
+  }
+  &__item{
+    display: flex;
+  }
+  &__img{
+    width: 220px;
+    flex-shrink: 0;
+    margin-right: 60px;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__content{
+    padding-top: 20px;
+  }
+  &__subtitle{
+    margin-bottom: 11px;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="direction.html" style="display: block; margin-bottom: 20px;">
+            Направления
+        </a>
+        <a href="portfolio.html" style="display: block; margin-bottom: 20px;">
+            Портфолио
+        </a>
+        <a href="project.html" style="display: block; margin-bottom: 20px;">
+            Проект
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Статья
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            Новости
+        </a>
+        <a href="news-item.html" style="display: block; margin-bottom: 20px;">
+            Пост
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании
+        </a>
+        <a href="history.html" style="display: block; margin-bottom: 20px;">
+            История
+        </a>
+        <a href="partners.html" style="display: block; margin-bottom: 20px;">
+            Партнеры
+        </a>
+        <a href="sertificate.html" style="display: block; margin-bottom: 20px;">
+            Сертификаты
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#messageModal">
+            Отправить сообщение
+        </button>
+
+    </div>
+
+    <div class="modal fade" id="messageModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg class="sprite">
+                <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+        </button>
+
+        <div class="modal__title display3">Отправить сообщение</div>
+
+        <form action="" class="modal__form">
+            <fieldset class="fg">
+                <label>Имя</label>
+                <input type="text" placeholder="Ваше имя">
+            </fieldset>
+            <fieldset class="fg">
+                <label>Email</label>
+                <input type="email" placeholder="@">
+            </fieldset>
+            <fieldset class="fg">
+                <label>Телефон</label>
+                <input type="tel" placeholder="+7">
+            </fieldset>
+            <fieldset class="fg fg--text">
+                <label>Текст обращения</label>
+                <textarea placeholder="Ваш вопрос"></textarea>
+            </fieldset>
+            <div class="modal__hint body-text3">
+                Нажимая кнопку «Отправить», вы соглашаетесь на обработку персональных данных в соответствии с
+                <a href="">Политикой конфиденциальности.</a>
+            </div>
+            <button class="modal__btn mbtn mbtn-blue">
+                <svg class="sprite">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                </svg>
+                <span>Отправить</span>
+            </button>
+        </form>
+
+    </div>
+</div>
+
+
+<!-- <div class="modal-backdrop show"></div>-->
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

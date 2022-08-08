@@ -1,0 +1,102 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Контакты", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="page-top page-top--small">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item">Компания</a>
+                        <span class="breadcrumbs__item">Контакты</span>
+                    </div>
+
+                    <h1 class="page-top__title display1">Контакты</h1>
+                </div>
+            </section>
+
+
+            <section class="contacts">
+                <div class="container">
+
+                    <div class="page__wrap page__wrap--gap100">
+                        <div class="page__left">
+                            <div class="contacts__map">
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A110b2761673a23f68a8863812876b207a0ef4074f1411632f44b678d7732cfac&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                            </div>
+
+                            <div class="contacts__info">
+                                <div class="contacts__group">
+                                    <div class="contacts__subtitle body-text">Юридический адрес</div>
+                                    <div class="contacts__items">
+                                        <div class="contacts__item body-text2">
+                                            Санкт-Петербург<br> Парнас 5-й Верхний пер, д.19
+                                        </div>
+                                        <div class="contacts__item body-text2">
+                                            Тел. <a href="tel:8128000000">812 800-00-00</a><br>
+                                            <a href="mailto:info@companyname.com">info@companyname.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__group">
+                                    <div class="contacts__subtitle body-text">Фактический адрес</div>
+                                    <div class="contacts__items">
+                                        <div class="contacts__item body-text2">
+                                            Санкт-Петербург<br> Парнас 5-й Верхний пер, д.19, офис 302
+                                        </div>
+                                        <div class="contacts__item body-text2">
+                                            Тел. <a href="tel:8128000000">812 800-00-00</a><br>
+                                            <a href="mailto:info@companyname.com">info@companyname.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form action="" class="contacts__form">
+                                <fieldset class="fg">
+                                    <label>Имя</label>
+                                    <input type="text" placeholder="Ваше имя">
+                                </fieldset>
+                                <fieldset class="fg">
+                                    <label>Телефон</label>
+                                    <input type="tel" placeholder="+7">
+                                </fieldset>
+                                <fieldset class="fg">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="@">
+                                </fieldset>
+                                <fieldset class="fg">
+                                    <label>Ваш вопрос</label>
+                                    <textarea placeholder="Текст обращения"></textarea>
+                                </fieldset>
+                                <div class="contacts__hint body-text3">
+                                    Нажимая кнопку «Отправить», вы соглашаетесь на обработку персональных данных в соответствии с
+                                    <a href="">Политикой конфиденциальности.</a>
+                                </div>
+                                <button class="contacts__btn mbtn mbtn-blue">Отправить</button>
+                            </form>
+                        </div>
+
+                        <div class="page__right">
+                            <div class="sidebar">
+                                @@include('components/page-blocks/_sidebar.html', {"active":"contacts"})
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

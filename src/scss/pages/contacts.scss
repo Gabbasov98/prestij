@@ -1,0 +1,45 @@
+@import "../vars";
+.contacts{
+  padding-bottom: 150px;
+  &__map{
+    height: 506px;
+  }
+  &__info{
+    margin-top: 78px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 633px;
+    color: #475467;
+  }
+  &__subtitle{
+    font-weight: 600;
+  }
+  &__item{
+    margin-top: 15px;
+  }
+  &__form{
+    margin-top: 85px;
+    max-width: 520px;
+    padding: 0 20px;
+  }
+  &__hint{
+    margin-top: 28px;
+    color: $gray2;
+    a{
+      color: $dark;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  &__btn{
+    font-family: $font3;
+    width: 190px;
+    height: 51px;
+    margin-top: 32px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,43 @@
+<div class="container">
+
+
+    @@if(title==="small"){
+    <div class="collection__title title">@@text</div>
+    }
+    @@if(title==="big"){
+    <div class="collection__title display2">@@text</div>
+}
+    <div class="collection__slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <a href="" class="project-card swiper-slide">
+                    @@include('../cards/_project-card.html',{"img":"project2"})
+                </a>
+                <a href="" class="project-card swiper-slide">
+                    @@include('../cards/_project-card.html',{"img":"project3"})
+                </a>
+                <a href="" class="project-card swiper-slide">
+                    @@include('../cards/_project-card.html',{"img":"project4"})
+                </a>
+                <a href="" class="project-card swiper-slide">
+                    @@include('../cards/_project-card.html',{"img":"project2"})
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="collection__nav">
+        <a href="" class="collection__link mbtn mbtn-black-outline">все проекты</a>
+        <div class="collection__control">
+            <div class="swiper-button-prev mbtn mbtn-black-outline">
+                <svg class="sprite">
+                    <use xlink:href="img/sprite.svg#arrow-prev"></use>
+                </svg>
+            </div>
+            <div class="swiper-button-next mbtn mbtn-black-outline">
+                <svg class="sprite">
+                    <use xlink:href="img/sprite.svg#arrow-next"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>

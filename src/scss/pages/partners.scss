@@ -1,0 +1,26 @@
+@import "../vars";
+.partners{
+  padding-bottom: 265px;
+  &__items{
+    margin-top: 95px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px 40px;
+    color: $dark;
+  }
+  &__item{
+    display: flex;
+  }
+  &__icon{
+    width: 60px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__subtitle{
+    margin-bottom: 11px;
+  }
+}

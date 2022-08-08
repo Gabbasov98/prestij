@@ -1,0 +1,68 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Новости", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="page-top article">
+                <div class="container container--small">
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item">Компания</a>
+                        <span class="breadcrumbs__item">Новости</span>
+                    </div>
+
+                    <h1 class="page-top__title display1">Длинный заголовок, состоящий из нескольких слов</h1>
+                    <div class="article-info">
+                        <div class="article-info__item">
+                            <div class="article-info__subtitle">Категория</div>
+                            <a href="" class="article-info__num body-text2 text-link">Опыт застройщика </a>
+                        </div>
+                        <div class="article-info__item">
+                            <div class="article-info__subtitle">Дата</div>
+                            <div class="article-info__num body-text2">12.06.21</div>
+                        </div>
+                    </div>
+
+                    <div class="article__text body-text">
+                        <h3>Особенности проекта</h3>
+                        <p>Данная фасадная система позволяет существенно уменьшить количество строительного материала для возведения стен здания, что ведет к экономии капитальных затрат при осуществлении строительства, облегчению всего сооружения и увеличению этажности здания.</p>
+                        <p>Основными преимуществами фасадных систем из просечно-вытяжных листов или сеток «ПРЕССТИЖ» являются:  возможность использовать различные геометрические формы ячеек и различные марки материалов – широкая возможность цветовых комбинаций /порошковая полимерная окраска в цвета по таблице RAL/ - эффективная вентиляция стен здания – устойчивость фасадной системы к атмосферным воздействиям – быстрый монтаж фасадной системы.</p>
+
+                        <h3>Важные факты</h3>
+                        <p>Основными преимуществами фасадных систем из просечно-вытяжных листов или сеток «ПРЕССТИЖ» являются:  возможность использовать различные геометрические формы ячеек и различные марки материалов – широкая возможность цветовых комбинаций /порошковая полимерная окраска в цвета по таблице RAL/ - эффективная вентиляция стен здания – устойчивость фасадной системы к атмосферным воздействиям – быстрый монтаж фасадной системы.</p>
+                    </div>
+
+                    <a href="" class="article__back mbtn mbtn-black-outline">назад в блог</a>
+                </div>
+            </section>
+
+            <section class="article-collection">
+                <div class="container container--small">
+                    <div class="article-collection__title display2">Последние новости</div>
+                    <div class="article-collection__items">
+                        <div class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news6"})
+                        </div>
+                        <div class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news7"})
+                        </div>
+                        <div class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news4"})
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

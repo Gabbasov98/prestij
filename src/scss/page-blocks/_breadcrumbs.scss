@@ -1,0 +1,19 @@
+@import "../vars.scss";
+.breadcrumbs {
+    color: $dark;
+    margin-bottom: 20px;
+    &__item {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 140%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        display: inline;
+        &:not(:first-child) {
+            &:before {
+                content: '>';
+                margin: 0 8px 0 5px;
+            }
+        }
+    }
+}

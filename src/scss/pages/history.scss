@@ -1,0 +1,37 @@
+@import "../vars";
+.history{
+  padding-bottom: 150px;
+  &__items{
+    max-width: 650px;
+    width: 100%;
+    margin: 90px auto 0;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: #667085;
+    }
+  }
+  &__item{
+    padding: 28px 50px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 43px;
+      left: -6px;
+      width: 14px;
+      height: 14px;
+      background: #667085;
+      border-radius: 50%;
+    }
+  }
+  &__num{
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+}

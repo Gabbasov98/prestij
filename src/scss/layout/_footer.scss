@@ -1,0 +1,68 @@
+@import "../vars";
+.footer{
+  padding: 84px 0 105px;
+  background: #1B4760;
+  color: $gray;
+  &__logo{
+    svg{
+      fill: $gray;
+      width: 216px;
+      height: 48px;
+    }
+  }
+  &__wrap{
+    display: flex;
+    margin-top: 41px;
+    justify-content: space-between;
+  }
+  &__left{
+    max-width: 200px;
+  }
+  &__right{
+    flex-grow: 1;
+    max-width: 880px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  }
+  &__address{
+    font-size: 10px;
+    line-height: 140%;
+    font-family: $font3;
+    margin-bottom: 20px;
+    span{
+      display: block;
+    }
+  }
+  &__socials{
+    display: flex;
+    align-items: center;
+    &-item{
+      margin-right: 10px;
+      svg{
+        width: 32px;
+        height: 32px;
+        fill: rgba(255, 255, 255, 0.6);
+      }
+      &:hover{
+        svg{
+          fill: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+  &__links{
+    display: flex;
+    flex-direction: column;
+  }
+  &__link{
+    font-size: 16px;
+    line-height: 140%;
+    &:hover{
+      color: #fff;
+    }
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+}

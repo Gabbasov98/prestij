@@ -1,0 +1,76 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"ЖК «Огни»", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="page-top">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item">Компания</a>
+                        <span class="breadcrumbs__item">Портфолио</span>
+                    </div>
+
+                    <h1 class="page-top__title display1">ЖК «Огни»</h1>
+                    <div class="page-top__items">
+                        <div class="page-top__item">
+                            <div class="page-top__subtitle">Регион</div>
+                            <div class="page-top__num">Москва</div>
+                        </div>
+                        <div class="page-top__item">
+                            <div class="page-top__subtitle">Категория</div>
+                            <div class="page-top__num">Фасады</div>
+                        </div>
+                        <div class="page-top__item">
+                            <div class="page-top__subtitle">Дата</div>
+                            <div class="page-top__num">Август, 2021</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project">
+                <div class="project__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/project.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/project.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/project.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="project__info">
+                        <div class="project__title display3">Особенности проекта</div>
+                        <div class="project__desc body-text">
+                            <p>Данная фасадная система позволяет существенно уменьшить количество строительного материала для возведения стен здания, что ведет к экономии капитальных затрат при осуществлении строительства, облегчению всего сооружения и увеличению этажности здания.</p>
+                            <p>Основными преимуществами фасадных систем из просечно-вытяжных листов или сеток «ПРЕССТИЖ» являются:  возможность использовать различные геометрические формы ячеек и различные марки материалов – широкая возможность цветовых комбинаций /порошковая полимерная окраска в цвета по таблице RAL/ - эффективная вентиляция стен здания – устойчивость фасадной системы к атмосферным воздействиям – быстрый монтаж фасадной системы.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection">
+                @@include('components/page-blocks/_collection.html',{"title":"big","text":"Похожие проекты"})
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

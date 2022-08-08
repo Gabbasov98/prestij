@@ -1,0 +1,71 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Сертификаты", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="page-top page-top--small">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item">Компания</a>
+                        <span class="breadcrumbs__item">Сертификаты</span>
+                    </div>
+
+                    <h1 class="page-top__title display1">Сертификаты</h1>
+                </div>
+            </section>
+
+
+            <section class="sertificate">
+                <div class="container">
+
+                    <div class="page__wrap page__wrap--gap100">
+                        <div class="page__left">
+                            <div class="sertificate__desc body-text">
+                                <p>Основными преимуществами фасадных систем из просечно-вытяжных листов или сеток «ПРЕССТИЖ» являются:  возможность использовать различные геометрические формы ячеек и различные марки материалов – широкая возможность цветовых комбинаций /порошковая полимерная окраска в цвета по таблице RAL/ - эффективная вентиляция стен здания – устойчивость фасадной системы к атмосферным воздействиям – быстрый монтаж фасадной системы.</p>
+                            </div>
+                            <div class="sertificate__items">
+                                <div class="sertificate__item">
+                                    <div class="sertificate__img">
+                                        <img src="img/sertificate.jpg" alt="">
+                                    </div>
+                                    <div class="sertificate__content">
+                                        <div class="sertificate__subtitle display4">Азимут, НПО</div>
+                                        <div class="sertificate__desc2 body-text2">Etiam tristique in vitae vulputate. Et quis elementum facilisis aliquet eget consequat, scelerisque dolor sem. </div>
+                                    </div>
+                                </div>
+                                <div class="sertificate__item">
+                                    <div class="sertificate__img">
+                                        <img src="img/sertificate2.jpg" alt="">
+                                    </div>
+                                    <div class="sertificate__content">
+                                        <div class="sertificate__subtitle display4">Форвард, ОАО</div>
+                                        <div class="sertificate__desc2 body-text2">Etiam tristique in vitae vulputate. Et quis elementum facilisis aliquet eget consequat, scelerisque dolor sem. </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__right">
+                            <div class="sidebar">
+                                @@include('components/page-blocks/_sidebar.html', {"active":"sertificate"})
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

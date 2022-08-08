@@ -1,0 +1,63 @@
+@import "../vars";
+.mbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.mbtn-white{
+    background: #FCFCFD;
+    color: $dark;
+    &:hover{
+        color: #FCFCFD;
+        background: $dark;
+    }
+}
+
+.mbtn-white-outline{
+    border: 1px solid #FCFCFD;
+    color: #FCFCFD;
+    &:hover{
+        background-color: #FCFCFD;
+        color: $primaryBg;
+    }
+}
+
+.mbtn-black-outline{
+    border: 1px solid $dark;
+    color: $dark;
+    &:hover{
+        background-color: $dark;
+        color: #fff;
+    }
+}
+
+.mbtn-blue{
+    background: #2C76A0;
+    color: #fff;
+    &:hover{
+        background: $primaryBg;
+        color: #fff;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.more-btn{
+    margin: 60px auto 0;
+    width: 380px;
+    height: 52px;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 140%;
+}

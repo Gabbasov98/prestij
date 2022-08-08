@@ -1,0 +1,79 @@
+@import "../vars";
+.blog{
+  padding: 45px 0 118px;
+  background-color: $grayBg;
+  &__select{
+    margin-top: 67px;
+    width: 240px;
+  }
+  &__grid{
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.333% - 20px));
+    gap: 30px;
+  }
+}
+
+.page-top--article{
+
+}
+
+.article-info{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  &__subtitle{
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $gray3;
+    margin-bottom: 6px;
+  }
+}
+
+.article{
+  padding-bottom: 128px;
+  .tags{
+    margin-top: 40px;
+  }
+  &__text{
+    margin-top: 64px;
+    h3{
+      font-family: $font2;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 130%;
+      margin-bottom: 20px;
+      &:not(:first-child){
+        margin-top: 40px;
+      }
+    }
+
+    img{
+      display: block;
+      max-width: 700px;
+      width: 100%;
+      margin: 80px 0;
+    }
+  }
+  &__back{
+    margin-top: 80px;
+    width: 226px;
+    height: 59px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.article-collection{
+  padding: 110px 0 167px;
+  background-color: $grayBg;
+  &__items{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+}

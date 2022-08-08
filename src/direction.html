@@ -1,0 +1,89 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Автотюнинг", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header header--light">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="direction" style="background-image: url(img/direction.webp);">
+                <div class="container">
+                    <div class="direction__inner">
+                        <div class="direction__content">
+                            <div class="direction__subtitle title2">ПРименение</div>
+                            <h1 class="direction__title display1">Автотюнинг</h1>
+                            <div class="direction__desc">это способ сделать свой автомобиль уникальным, выразить себя через свою машину</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="container">
+                    <div class="info__title display2">Индустрия</div>
+                    <div class="info__desc">Сложно представить современный мир без автомобилей — они стали неотъемлемой частью нашей жизни. Именно поэтому данная область постоянно эволюционирует, создаются всё более технологичные и современные машины.</div>
+
+                    <div class="info__title display2">Применение сетки PressMesh®</div>
+                    <div class="qa">
+                        <div class="qa-card">
+                            @@include('components/cards/_qa-card.html',{"title":"Декоративные вставки в аэродинамические обвесы"})
+                        </div>
+                        <div class="qa-card">
+                            @@include('components/cards/_qa-card.html',{"title":"Решетки капота"})
+                        </div>
+                        <div class="qa-card">
+                            @@include('components/cards/_qa-card.html',{"title":"Решетки радиатора"})
+                        </div>
+                        <div class="qa-card">
+                            @@include('components/cards/_qa-card.html',{"title":"Решетка бампера"})
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="direction direction--m0" style="background-image: url(img/direction2.webp);">
+                <div class="container">
+                    <div class="direction__inner">
+                        <div class="direction__content">
+                            <h1 class="direction__title display1">Элемент дизайна с 1903</h1>
+                            <div class="direction__desc">Решетка является отличительным элементом любого автомобиля, подчеркивает индивидуальность и стиль его обладателя.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="desc">
+                <div class="container">
+                    <div class="desc__group">
+                        <div class="desc__title display2">Рекомендуемые типы сетки PressMesh®</div>
+                        <ul class="desc__list mlist">
+                            <li>Сетка из углеродистой стали, толщиной до 1,20 мм.</li>
+                            <li>Сетка из оцинкованной стали, толщиной до 1,20 мм.</li>
+                            <li>Сетка из алюминиевых сплавов, толщиной до 1,20 мм.</li>
+                            <li>Сетка из легированных сталей, толщиной до 0,70 мм.</li>
+                        </ul>
+                        <a href="" class="desc__link">Каталог сетки PressMesh</a>
+                    </div>
+
+                    <div class="desc__group">
+                        <div class="desc__title display2">Сертификаты соответствия</div>
+                        <div class="desc__text">Все материалы, которые мы применяем при производстве просечно-вытяжной сетки для стайлинга, произведены на металлургических заводах в соответствии с Государственным стандартом, что обязательно подтверждено сертификатами качества.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="consult">
+                @@include('components/page-blocks/_consult.html')
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
