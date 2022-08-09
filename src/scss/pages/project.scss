@@ -56,8 +56,12 @@
     margin-top: 40px;
   }
   .swiper{
+    &-wrapper{
+      align-items: stretch;
+    }
     &-slide{
       width: 540px;
+      height: auto;
     }
     &-button{
       &-prev,

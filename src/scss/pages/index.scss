@@ -6,10 +6,8 @@
   overflow: hidden;
   .swiper{
     &-slide{
-      padding: 300px 300px 300px 80px;
+      padding: 300px 300px 333px 80px;
       position: relative;
-      height: 100vh;
-      max-height: 960px;
       background-size: cover;
       &::before{
         content: '';
@@ -92,7 +90,6 @@
     }
   }
 }
-
 
 .product{
   padding: 100px 0;
@@ -180,17 +177,11 @@
   &__3d{
     position: relative;
   }
-  &__bottom{
+  &__nav{
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-left: 380px;
-    margin-top: 40px;
-  }
-  &__nav{
+    left: 50%;
+    transform: translate(-50%, 40px);
     display: flex;
     align-items: center;
     border-radius: 22px;
