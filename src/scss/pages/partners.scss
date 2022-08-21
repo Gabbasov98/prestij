@@ -24,3 +24,21 @@
     margin-bottom: 11px;
   }
 }
+
+@media screen and (max-width: 768px){
+  .partners{
+    padding: 32px 0 94px;
+    background-color: #fff;
+    &__items{
+      margin-top: 64px;
+      grid-template-columns: 100%;
+      gap: 50px;
+    }
+    &__item{
+      align-items: unset;
+    }
+    &__subtitle{
+      font-size: 18px;
+    }
+  }
+}

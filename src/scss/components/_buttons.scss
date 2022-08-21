@@ -61,3 +61,19 @@
     font-size: 14px;
     line-height: 140%;
 }
+
+@media screen and (max-width: 768px){
+    .more-btn{
+        margin-top: 0;
+        width: 175px;
+        height: 35px;
+        font-size: 11px;
+        border: 1px solid $dark;
+        &__wrap{
+            margin: 32px -16px 0;
+            background: #F2F4F7;
+            padding: 40px 0;
+            width: calc(100% + 32px);
+        }
+    }
+}

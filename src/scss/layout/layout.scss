@@ -22,7 +22,7 @@ body {
   font-family: $font1;
   font-weight: 400;
   color: $black;
-  background: #F2F4F7;
+  //background: $grayBg;
   &.fixed-body {
     overflow-y: hidden;
   }
@@ -34,9 +34,15 @@ body {
   margin: 0 auto;
   padding: 0 30px;
   @media screen and (max-width: 992px) {
-    padding: 0 20px;
+    padding: 0 16px;
   }
   &--small{
     max-width: 960px;
   }
 }
+@media screen and (max-width: 768px){
+  body{
+    background: #F9FAFB;
+  }
+}
+

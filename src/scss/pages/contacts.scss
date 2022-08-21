@@ -43,3 +43,49 @@
     text-transform: uppercase;
   }
 }
+
+@media screen and (max-width: 992px){
+  .contacts{
+    padding: 0;
+    .page__left{
+      display: flex;
+      flex-direction: column;
+    }
+    &__map{
+      order: 3;
+      height: 380px;
+    }
+    &__info{
+      margin: 0;
+      padding: 32px 0 48px;
+      grid-template-columns: 100%;
+    }
+    &__form{
+      background: #F2F4F7;
+      max-width: unset;
+      width: calc(100% + 32px);
+      margin: 0 0 0 -16px;
+      padding: 32px 16px 64px;
+      .fg{
+        margin-bottom: 16px;
+      }
+    }
+    &__hint{
+      margin-top: -4px;
+    }
+    &__btn{
+      margin-top: 20px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .contacts{
+    &__btn{
+      width: 148px;
+      height: 35px;
+      font-size: 11px;
+    }
+  }
+}

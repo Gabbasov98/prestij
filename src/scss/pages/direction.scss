@@ -92,6 +92,10 @@
     line-height: 140%;
     text-decoration-line: underline;
   }
+  &__text{
+    font-size: 18px;
+    line-height: 140%;
+  }
 }
 
 .consult{
@@ -100,10 +104,14 @@
   color: #FFFFFF;
   position: relative;
   min-height: 400px;
+  &__icon{
+    display: none;
+  }
   &__img{
     position: absolute;
     left: 0;
     bottom: 0;
+    width: 545px;
   }
   &__inner{
     width: 520px;
@@ -122,5 +130,151 @@
     font-size: 16px;
     font-family: $font3;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .consult{
+    &__inner{
+      width: 100%;
+    }
+    &__img{
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .direction{
+    background-position: center;
+    height: unset;
+    max-height: unset;
+    &__inner{
+      height: 100vh;
+      max-height: 700px;
+    }
+    &__subtitle{
+      display: none;
+    }
+    &__desc{
+      font-size: 18px;
+    }
+  }
+
+  .info{
+    padding: 32px 0 64px;
+    &__desc{
+      margin: 24px 0 48px;
+      font-size: 16px;
+    }
+  }
+
+  .qa{
+    margin-top: 32px;
+  }
+
+  .desc{
+    padding: 32px 0 64px;
+    background: #FFFFFF;
+    &__group{
+      &:not(:last-child){
+        margin-bottom: 48px;
+      }
+    }
+    &__title{
+      margin-bottom: 24px;
+    }
+  }
+
+  .consult{
+    background-color: transparent;
+    color: $dark;
+    padding: 32px 0 52px;
+    min-height: unset;
+    text-align: center;
+    &__img{
+      display: none;
+    }
+    &__icon{
+      display: block;
+      width: 120px;
+      margin: 0 auto;
+    }
+    &__title{
+      font-size: 22px;
+      margin: 16px auto 0;
+      max-width: 300px;
+    }
+    &__btn{
+      margin-left: auto;
+      margin-right: auto;
+      background: $primaryBg;
+      border-color: $primaryBg;
+      &:hover{
+        background: $primary;
+        border-color: $primary;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px){
+  .direction{
+    &--m0{
+      .direction__title{
+        font-size: 28px;
+      }
+    }
+    &__inner{
+      max-height: 400px;
+    }
+    &__title{
+      font-size: 36px;
+    }
+    &__desc{
+      font-size: 14px;
+    }
+  }
+
+  .info{
+    &__desc{
+      margin: 12px 0 24px;
+      font-size: 12px;
+    }
+  }
+
+  .qa{
+    margin-top: 16px;
+  }
+
+  .desc{
+    &__group{
+      &:not(:last-child){
+        margin-bottom: 24px;
+      }
+    }
+    &__title{
+      margin-bottom: 12px;
+    }
+    &__text,
+    &__list{
+      font-size: 12px;
+    }
+    &__link{
+      font-size: 10px;
+    }
+  }
+
+  .consult{
+    &__title{
+      font-size: 16px;
+      max-width: 225px;
+    }
+    &__btn{
+      font-size: 11px;
+      width: 226px;
+      height: 35px;
+    }
   }
 }

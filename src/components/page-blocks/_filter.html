@@ -1,0 +1,43 @@
+<div class="filter__wrap">
+    <button class="filter__close">
+        <svg class="sprite">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+    </button>
+    <div class="filter__search">
+        <input type="text">
+        <button class="filter__search-btn">
+            <svg class="sprite">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="filter__select filter__select1">
+        <select class="my-select">
+            <option selected>По новизне</option>
+            <option>По популярности</option>
+            <option>По имени</option>
+            <option>Только 2022</option>
+            <option>Только 2021</option>
+        </select>
+    </div>
+    @@if(second!==""){
+    <div class="filter__select filter__select2">
+        <select class="my-select">
+            <option selected>10</option>
+            <option>20</option>
+            <option>50</option>
+        </select>
+    </div>
+    }
+    <button class="filter__btn mbtn mbtn-blue">Показать</button>
+</div>
+
+<div class="filter__bg"></div>
+
+<button class="filter__mob">
+    <svg class="sprite">
+        <use xlink:href="img/sprite.svg#settings"></use>
+    </svg>
+    <span>Настроить вид</span>
+</button>

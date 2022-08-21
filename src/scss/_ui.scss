@@ -6,11 +6,13 @@
     &__wrap{
         display: flex;
         &--gap100{
-            .page__left{
-                max-width: calc(100% - 440px);
-            }
-            .page__right{
-                margin-left: 100px;
+            @media screen and (min-width: 1200px){
+                .page__left{
+                    max-width: calc(100% - 440px);
+                }
+                .page__right{
+                    margin-left: 100px;
+                }
             }
         }
     }
@@ -220,4 +222,100 @@
 
 .swiper-pagination{
     z-index: 2;
+    display: flex;
+    &-bullet{
+        width: 14px;
+        height: 14px;
+        background: #FCFCFD;
+        opacity: 0.65;
+        margin: 0 14px 0 0 !important;
+        &-active{
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .page{
+        &__right{
+            width: 290px;
+            margin-left: 30px;
+        }
+        &__left{
+            max-width: calc(100% - 320px);
+        }
+    }
+
+    .page-top{
+        &__items{
+            grid-template-columns: repeat(6,1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .page{
+        &__right{
+            display: none;
+        }
+        &__left{
+            max-width: 100%;
+        }
+    }
+
+    .page-top{
+        padding: 16px 0;
+        &__items{
+            margin-top: 32px;
+            grid-template-columns: repeat(1,1fr);
+        }
+        &__item{
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            min-height: unset;
+        }
+        &__num{
+            min-width: 24px;
+            text-align: center;
+            margin-right: 16px;
+            flex-shrink: 0;
+            font-size: 12px;
+        }
+        &__subtitle{
+            margin: 0;
+            font-size: 9px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .tags{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: calc(100% + 32px);
+        margin:0 0 0 -16px;
+        background-color: #fff;
+        padding: 25px 16px;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .tag{
+        flex-shrink: 0;
+        margin: 0 8px 0 0;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .swiper-pagination{
+        &-bullet{
+            width: 10px;
+            height: 10px;
+            margin: 0 10px 0 0 !important;
+        }
+    }
 }

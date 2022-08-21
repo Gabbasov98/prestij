@@ -28,3 +28,39 @@
     margin-bottom: 11px;
   }
 }
+
+@media screen and (max-width: 768px){
+  .sertificate{
+    padding: 32px 0 94px;
+    background-color: #fff;
+    &__items{
+      margin-top: 48px;
+      gap: 70px;
+    }
+    &__item{
+      align-items: unset;
+    }
+    &__subtitle{
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px){
+  .sertificate{
+    &__item{
+      display: block;
+    }
+    &__img{
+      width: 200px;
+      margin: 0 auto;
+    }
+    &__content{
+      padding-top: 72px;
+    }
+    &__subtitle{
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+  }
+}

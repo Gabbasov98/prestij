@@ -2,17 +2,7 @@
 .news{
   padding: 45px 0 118px;
   background-color: $grayBg;
-  &__filter{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__select{
-    width: 240px;
-  }
-  &__select2{
-    width: 120px;
-  }
+
   &__grid{
     margin-top: 40px;
     display: grid;
@@ -21,5 +11,153 @@
   }
   &__more{
     margin: 80px 0 0;
+  }
+}
+
+.filter{
+  &__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__mob,
+  &__bg,
+  &__close,
+  &__search,
+  &__btn{
+    display: none;
+  }
+  &__select1{
+    width: 240px;
+  }
+  &__select2{
+    width: 120px;
+  }
+}
+
+.news-tags{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .news{
+    padding: 0;
+    &__grid{
+      margin-top: 20px;
+    }
+    &__more{
+      margin: 0 auto;
+    }
+  }
+
+  .filter{
+    &.is-open{
+      .filter__bg{
+        display: block;
+      }
+      .filter__wrap{
+        opacity: 1;
+        pointer-events: unset;
+      }
+    }
+    &__wrap{
+      position: fixed;
+      width: 375px;
+      max-width: 100%;
+      background-color: #fff;
+      padding: 27px 30px 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 100;
+      display: block;
+      opacity: 0;
+      pointer-events: none;
+      transition: all .3s;
+    }
+    &__bg{
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 80;
+      background: #000;
+      opacity: .5;
+    }
+    &__select{
+      width: 100%;
+      margin-bottom: 24px;
+      .my-select{
+        background: #F2F4F7 !important;
+      }
+    }
+    &__close{
+      display: flex;
+      margin-left: auto;
+      svg{
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &__search{
+      display: flex;
+      align-items: center;
+      margin: 16px 0 40px;
+      &-btn{
+        width: 40px;
+        height: 40px;
+        svg{
+          width: 24px;
+          height: 24px;
+        }
+      }
+      input{
+        flex-grow: 1;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid $dark;
+      }
+    }
+    &__btn{
+      width: 100%;
+      height: 47px;
+      display: flex;
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+    &__mob{
+      padding: 31px 0;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 120%;
+      &:hover{
+        color: $primaryBg;
+        svg{
+          fill: $primaryBg;
+        }
+      }
+      svg{
+        width: 16px;
+        height: 16px;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .news-tags{
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .news{
+    &__grid{
+      gap: 16px;
+    }
   }
 }

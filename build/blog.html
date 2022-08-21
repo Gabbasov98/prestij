@@ -11,7 +11,7 @@
 </head>
 
 
-<body>
+<body class="blog-page">
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -53,8 +53,10 @@
                     <a href="" class="menu__link">Контакты</a>
                     <a href="" class="menu__link">Портфолио</a>
                     <a href="" class="menu__link">Блог</a>
+
+                    <a href="" class="menu__link2">Интернет-магазин</a>
                 </div>
-                <a href="" class="menu__link2">Интернет-магазин</a>
+
             </div>
 
             <div class="menu__group">
@@ -67,8 +69,10 @@
                     <a href="" class="menu__link">PressMesh-SH</a>
                     <a href="" class="menu__link">PressMesh-TDec</a>
                     <a href="" class="menu__link">PressMesh-S</a>
+
+                    <a href="" class="menu__link2">Вся продукция</a>
                 </div>
-                <a href="" class="menu__link2">Вся продукция</a>
+
             </div>
 
             <div class="menu__group">
@@ -82,8 +86,10 @@
                     <a href="" class="menu__link">Пищевая промышленность</a>
                     <a href="" class="menu__link">Автотюнинг</a>
                     <a href="" class="menu__link">Защитные конструкции</a>
+
+                    <a href="" class="menu__link2">Все направления</a>
                 </div>
-                <a href="" class="menu__link2">Все направления</a>
+
             </div>
         </div>
     </div>
@@ -115,14 +121,43 @@
                         <a href="" class="tag">Применение ПВС</a>
                         <a href="" class="tag">Фасады</a>
                     </div>
-                    <div class="blog__select">
-                        <select class="my-select">
-                            <option selected>По новизне</option>
-                            <option>По популярности</option>
-                            <option>По имени</option>
-                            <option>Только 2022</option>
-                            <option>Только 2021</option>
-                        </select>
+                    <div class="blog__filter filter">
+                        <div class="filter__wrap">
+    <button class="filter__close">
+        <svg class="sprite">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+    </button>
+    <div class="filter__search">
+        <input type="text">
+        <button class="filter__search-btn">
+            <svg class="sprite">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="filter__select filter__select1">
+        <select class="my-select">
+            <option selected>По новизне</option>
+            <option>По популярности</option>
+            <option>По имени</option>
+            <option>Только 2022</option>
+            <option>Только 2021</option>
+        </select>
+    </div>
+    
+    <button class="filter__btn mbtn mbtn-blue">Показать</button>
+</div>
+
+<div class="filter__bg"></div>
+
+<button class="filter__mob">
+    <svg class="sprite">
+        <use xlink:href="img/sprite.svg#settings"></use>
+    </svg>
+    <span>Настроить вид</span>
+</button>
+
                     </div>
 
                     <div class="blog__grid">
@@ -236,7 +271,9 @@
                         </div>
                     </div>
 
-                    <button class="blog__more more-btn mbtn mbtn-white">Загрузить еще</button>
+                    <div class="more-btn__wrap">
+                        <button class="blog__more more-btn mbtn mbtn-white">Загрузить еще</button>
+                    </div>
                 </div>
             </section>
 

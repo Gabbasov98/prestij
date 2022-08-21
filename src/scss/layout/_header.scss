@@ -127,6 +127,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
   &__grid{
     max-width: 930px;
     width: 100%;
@@ -147,12 +148,58 @@
     display: grid;
     grid-template-columns: 100%;
     gap: 16px;
-    margin: 24px 0;
+    margin: 24px 0 0;
   }
   &__link,
   &__link2{
     &:hover{
       color: #fff;
+    }
+  }
+  &__link2{
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header{
+    padding: 20px 0;
+    &--active{
+
+    }
+    &__logo{
+      z-index: 11;
+    }
+    &__btn{
+      margin-left: 26px;
+    }
+  }
+
+  .menu{
+    padding: 96px 32px 60px;
+    display: block;
+    &__grid{
+      display: block;
+    }
+    &__group{
+      margin-bottom: 32px;
+    }
+    &__title{
+      cursor: pointer;
+    }
+    &__links{
+      margin: 16px 0 0;
+      display: none;
+    }
+    &__link{
+      display: block;
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+    }
+    &__link2{
+      display: block;
+      margin-top: 16px;
     }
   }
 }

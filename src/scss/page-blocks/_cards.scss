@@ -160,3 +160,96 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 992px){
+    .project-card{
+        &__img{
+            height: 200px;
+        }
+        &__content{
+            padding: 16px 12px;
+        }
+        &__info{
+            &-item{
+                font-size: 12px;
+                margin-top: 7px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .news-card{
+        &__content{
+            padding: 24px 16px 32px;
+        }
+        &__desc{
+            margin: 12px 0;
+        }
+    }
+    .blog-card{
+        &__img{
+            height: 180px;
+        }
+        &__content{
+            padding: 24px 16px 32px;
+        }
+        &__desc{
+            margin: 12px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .blog-card{
+        &__img{
+            height: unset;
+        }
+    }
+
+    .news-card{
+        display: block;
+        &__img{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .qa-card{
+        &__show{
+            padding: 16px 10px;
+        }
+        &__title{
+            font-size: 12px;
+        }
+        &__btn{
+            svg{
+                width: 16px;
+                height: 16px;
+            }
+        }
+        &__hidden{
+            padding: 8px 10px 16px;
+        }
+    }
+
+    .news-card,
+    .blog-card{
+        &__title{
+            font-size: 16px;
+        }
+        &__date{
+            margin-top: 12px;
+        }
+    }
+
+    .news-card{
+        &__info{
+            display: block;
+            &-title{
+                margin: 4px 0 0;
+            }
+        }
+    }
+}
