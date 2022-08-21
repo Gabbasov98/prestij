@@ -121,6 +121,10 @@
   background: $primaryBg;
   color: #FFFFFF;
   padding: 254px 0 306px;
+  &--page{
+    margin-top: -72px;
+    min-height: 100vh;
+  }
   .container{
     max-width: 1300px;
   }
@@ -326,6 +330,10 @@
 
   .model{
     padding: 16px 0 64px;
+    &--page{
+      padding-top: 120px;
+      margin-top: -68px;
+    }
     &__left{
       width: 100%;
     }
