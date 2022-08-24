@@ -115,6 +115,9 @@
         &-pagination{
           display: none;
         }
+        &-slide{
+          height: 500px;
+        }
       }
     }
     &__props{
@@ -175,6 +178,11 @@
   .project{
     &__desc{
       margin-top: 16px;
+    }
+    &__slider{
+      .swiper-slide{
+        height: 350px;
+      }
     }
   }
 
