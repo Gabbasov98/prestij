@@ -15,3 +15,8 @@ $(".menu__title").click(function () {
         $(this).siblings(".menu__links").slideDown()
     }
 })
+
+$(".header__search").click(function () {
+    console.log(true)
+    $(this).addClass("header__search--active")
+})
