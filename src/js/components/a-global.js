@@ -18,5 +18,9 @@ $(".menu__title").click(function () {
 
 $(".header__search").click(function () {
     console.log(true)
-    $(this).addClass("header__search--active")
+    $(this).toggleClass("header__search--active")
 })
+
+$(window).scroll(function() {
+    $(".header__search").removeClass("header__search--active")
+});
