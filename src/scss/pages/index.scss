@@ -83,7 +83,7 @@
 .product{
   padding: 100px 0;
   height: 100vh;
-  max-height: 960px;
+  //max-height: 960px;
   background-image: url(../img/product.webp);
   background-size: cover;
   background-position: right top;
@@ -410,6 +410,7 @@
     &__card{
       backdrop-filter: unset;
       padding: 0;
+      background-color: transparent;
     }
   }
 
